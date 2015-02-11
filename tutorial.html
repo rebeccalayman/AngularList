@@ -1,0 +1,52 @@
+<!doctype html>
+<html ng-app="assignment6">
+
+<head>
+  <meta charset="utf-8">
+  <title>Tutorial List</title>
+  
+  <script src="http://code.angularjs.org/1.1.4/angular.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="tablesorter.js"></script>  
+  <script src="tutorials.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body ng-controller="myController">
+ <h1>List of Tutorials</h1>
+ <p> Click table headers to sort </p>
+	<div class="table-responsive">
+        <table class="table" id="tutorialTable" style="border: 1px solid black; width:60%; margin:auto;">
+	<thead>
+	<tr>
+		<th>Image</th>
+		<th>Author</th>
+		<th>Title</th>
+		<th>Website</th>
+	</tr>
+	</thead>
+	<tbody>
+    <tr ng-repeat="tutorial in tutorials">
+	  <td>
+		<img class="tutorialImg" src="{{tutorial.image}}"></img>
+	  </td>
+	  <td>
+		{{tutorial.author}}
+	  </td>
+      <td>
+        {{ tutorial.title }}	
+      </td>
+	  <td>
+		<a href="{{tutorial.url}}" target="_blank">Check out the Tutorial Here</a>
+	  </td>
+    </tr>
+	</tbody>
+</table>
+
+      </div>
+  </body>
+</body>
+
+</html>

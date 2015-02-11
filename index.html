@@ -1,0 +1,98 @@
+<html lang="en">
+	<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Becky's Homepage</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" aria-expanded="false" aria-controls="navbar" type="button" data-toggle="collapse" data-target="#navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+        <!--/.navbar-collapse -->
+      </div>
+    </nav>
+	
+
+    
+        <h1 style="padding-left: 100; padding-right:100; padding-top:70">Learn The Basics of Angular!</h1>
+        <p style="padding-left: 100; padding-right:100"> I will show you some basics about angular, and how I 
+										used it to create my list of tutorials from the using json. </p>
+        
+    
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>What is Angular?</h2>
+          <p>Angular is an open-source web application framework maintained by Google and a community 
+		  of individual developers and corporations to address many of the challenges encountered in 
+		  developing single-page applications. Its goal is to simplify both development and testing of 
+		  such applications by providing a framework for client-side model–view–controller (MVC) architecture,
+		  along with components commonly used in rich internet applications.
+		  <br><br>
+		  The library works by first reading the HTML page, which has embedded into it additional custom 
+		  tag attributes. Those attributes are interpreted as directives telling Angular to bind input or 
+		  output parts of the page to a model that is represented by standard JavaScript variables. The 
+		  values of those JavaScript variables can be manually set within the code, or retrieved from 
+		  static or dynamic JSON resources. </p>
+         
+        </div>
+        <div class="col-md-4">
+          <h2>What Elements do I Need to Know?</h2>
+          <p>The first element you need to know is a controller. A controller contains the (presentation 
+		  or workflow) logic of our Web client. It is written in JavaScript. AngularJS strongly encourages
+		  us to separate concerns and put all logic/code into controllers and keep the view (the html page
+		  or html fragment) free from any JavaScript. The model on the other hand is a representation of 
+		  the data we need to display or change through the user’s input.
+		  <br><br>
+		  Another important element you need to know something about to understand my project is the json
+		  file. JSON (JavaScript Object Notation) is a lightweight data-interchange format. It is easy for
+		  humans to read and write. It is easy for machines to parse and generate. It is based on a subset
+		  of the JavaScript Programming Language.</p>
+          
+       </div>
+        <div class="col-md-4">
+          <h2>How Were These Elements Used in my Project?</h2>
+          <p>The AngularJS application is defined by ng-app. The application runs inside a div tag. The 
+		  ng-controller directive names the controller object. The myController function is a standard
+		  JavaScript  object constructor. AngularJS will invoke myController with a $scope object. In 
+		  AngularJS, $scope is the application object (the owner of application variables and functions). 
+		  The myController creates four properties (variables) in the scope (image, author, title and url). 
+		  The ng-model directives bind the input fields to the controller properties (image, author, title
+		  and url). These variables were obtained through the json file that we were provided to create 
+		  this list from.
+		  <br><br>
+		  You can check out my project by following the link below. Feel free to download the code and 
+		  play around with it for yourself.</p>
+          <p><a class="btn btn-default" role="button" href="https://github.com/rebeccalayman/AngularList">View details »</a></p>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>© Becky Inc. 2014</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    
+
+</body></html>
